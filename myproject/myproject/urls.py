@@ -15,13 +15,20 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path, include
+from django.shortcuts import render 
+from django.http import HttpResponse
 from app import views, forms
 import django.contrib.auth.views
 from django.contrib.auth.views import LoginView, LogoutView
 from datetime import datetime
 admin.autodiscover()
 
+def home(request):
+    return render(request, 'menu.html')  # Ensure you have a 'home.html' template
+
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('accounts/', include('accounts.urls')),
+    path('', home, name='home'),  # Root URL
+    path('accounts/', include('accounts.urls')),  # Your accounts app URLs
+    path('login/', views.login_view, name='login'),
 ]
