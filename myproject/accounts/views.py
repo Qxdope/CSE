@@ -12,7 +12,7 @@ def register(request):
             return redirect('home')  # Change 'home' to the actual home page URL name
     else:
         form = UserRegistrationForm()
-    return render(request, 'accounts/register.html', {'form': form})
+    return render(request, 'app/register.html', {'form': form})
 
 def login_view(request):
     if request.method == 'POST':
