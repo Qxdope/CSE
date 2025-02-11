@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>Suggested Exhibits</h2>
+    {% for exhibit in suggested_exhibits %}
+        <div>
+            <h3>{{ exhibit.title }}</h3>
+            <p>{{ exhibit.description }}</p>
+            <a href="{% url 'save_exhibit' exhibit.id %}">Save Exhibit</a>
+        </div>
+    {% empty %}
+        <p>No suggestions at the moment.</p>
+    {% endfor %}
+{% endblock %}
