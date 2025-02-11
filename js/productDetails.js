@@ -8,7 +8,8 @@ const productDatabase = {
         location: 'Galleria dell Accademia, Florence, Italy',
         year: 'Created 1501-1504',
         technique: 'Marble sculpture',
-        image: 'img/David.jpg'
+        image: '../img/David.jpg'
+
     },
     'The Thinker': {
         title: 'The Thinker',
@@ -28,12 +29,10 @@ function showProductDetailsPage(productName) {
     const product = productDatabase[productName];
     if (!product) {
         alert('Product not found');
+        window.location.href = `product-details.html?product=${encodeURIComponent(productName)}`;
         return;
-         {
-            // Pass product name to the details page via URL
-            window.location.href = `product-details.html?product=${encodeURIComponent(productName)}`;
-        }
     }
+    
 
     // Update the product details on the page
     document.getElementById('product-details-title').textContent = product.title;

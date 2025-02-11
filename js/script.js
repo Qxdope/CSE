@@ -102,7 +102,7 @@ const productDatabase = {
         location: 'Louvre Museum, Paris, France',
         year: 'Painted c. 1503–1519',
         technique: 'Oil painting on poplar panel',
-        image: './img/Mona_Lisa.jpg'  // Ensure relative path is correct
+        image: '../img/Mona_Lisa.jpg'  // Ensure relative path is correct
 
     },
     'Starry Night': {
@@ -113,7 +113,7 @@ const productDatabase = {
         location: 'Museum of Modern Art (MoMA), New York, USA',
         year: 'Painted in 1889',
         technique: 'Oil impasto',
-        image: './img/Starry_Night.jpg'
+        image: '../img/Starry_Night.jpg'
     },
     'The Scream': {
         title: 'The Scream',
@@ -123,7 +123,7 @@ const productDatabase = {
         location: 'National Gallery, Oslo, Norway',
         year: 'Painted in 1893',
         technique: 'Oil, tempera, and pastel on cardboard',
-        image: './img/the_scream.jpg'
+        image: '../img/the_scream.jpg'
     },
     'Girl with a Pearl Earring': {
         title: 'Girl with a Pearl Earring',
@@ -133,7 +133,7 @@ const productDatabase = {
         location: 'Mauritshuis, The Hague, Netherlands',
         year: 'Painted c. 1665',
         technique: 'Oil on canvas',
-        image: './img/Pearl_Earring.jpg'
+        image: '../img/Pearl_Earring.jpg'
     },
     'Guernica': {
         title: 'Guernica',
@@ -143,7 +143,7 @@ const productDatabase = {
         location: 'Museo Reina Sofía, Madrid, Spain',
         year: 'Painted c. 1937',
         technique: 'Oil painting on canvas',
-        image: './img/Guernica.jpg'
+        image: '../img/Guernica.jpg'
     },
     'The Kiss': {
         title: 'The Kiss',
@@ -153,7 +153,7 @@ const productDatabase = {
         location: 'Österreichische Galerie Belvedere, Vienna, Austria',
         year: 'Painted in 1907–1908',
         technique: 'Oil and gold leaf on canvas',
-        image: './img/The Kiss.jpg'
+        image: '../img/The Kiss.jpg'
     },
     'American Gothic': {
         title: 'American Gothic',
@@ -163,7 +163,7 @@ const productDatabase = {
         location: 'Art Institute of Chicago, Chicago, USA',
         year: 'Painted in 1930',
         technique: 'Oil painting on beaverboard',
-        image: './img/American Gothic.jpg'
+        image: '../img/American Gothic.jpg'
     },
     'Night Watch': {
         artist: 'Rembrandt van Rijn',
@@ -172,7 +172,7 @@ const productDatabase = {
         location: 'Rijksmuseum, Amsterdam, Netherlands',
         year: 'Painted in 1642',
         technique: 'Oil painting on canvas',
-        image: './img/Night_Watch.jpg'
+        image: '../img/Night_Watch.jpg'
     },
 
     //<!-- Sculptures Page -->
