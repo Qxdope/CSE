@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>Saved Exhibits</h2>
+    {% for saved in saved_exhibits %}
+        <div>
+            <h3>{{ saved.exhibit.title }}</h3>
+            <p>{{ saved.exhibit.description }}</p>
+        </div>
+    {% empty %}
+        <p>No saved exhibits yet.</p>
+    {% endfor %}
+{% endblock %}

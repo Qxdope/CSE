@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h2>Search Results</h2>
+    <form method="GET">
+        <input type="text" name="q" placeholder="Search exhibits..." value="{{ query }}">
+        <button type="submit">Search</button>
+    </form>
+
+    {% for exhibit in exhibits %}
+        <div>
+            <h3>{{ exhibit.title }}</h3>
+            <p>{{ exhibit.description }}</p>
+            <a href="{% url 'save_exhibit' exhibit.id %}">Save Exhibit</a>
+        </div>
+    {% empty %}
+        <p>No exhibits found.</p>
+    {% endfor %}
+{% endblock %}
