@@ -8,61 +8,44 @@
     <link rel="stylesheet" href="../css/style.css">
 </head>
 <body class="sculptures-bg">
-    <div id="sculptures-page" class="container">
-        <h1>Sculptures Exhibit</h1>
+    <div id="sculptures-page" class="container mt-5">
+        <h1 class="text-center mb-4">Sculptures Exhibit</h1>
         <div class="row g-4">  
             <div class="col-md-4">
                 <div class="card h-100">
-                    <img src="../img/David.jpg" alt="David">
+                    <img src="../../../../img/David.jpg" class="card-img-top" alt="David">
                     <div class="card-body">
                         <h5 class="card-title">David</h5>
-                        <p class="card-text">Now is located at the Louvre Museum in Paris, Francent</p>
-                        <p class="text-primary fw-bold">Price:$1 billion</p>
-                        <!-- Example button for "David" -->
-                        <button class="btn btn-warning" onclick="window.location.href='product-details.html?product=David'">more details</button>
+                        <p class="card-text">Now is located at the Louvre Museum in Paris, France</p>
+                        <p class="text-primary fw-bold">Price: $1 billion</p>
+                        <button class="btn btn-warning" onclick="window.location.href='product-details.html?product=David'">More Details</button>
                     </div>
                 </div>
             </div>
 
             <div class="col-md-4">
                 <div class="card h-100">
-                    <img src="../img/The Thinker.jpg" alt="The Thinker">
+                    <img src="../../../../img/The Thinker.jpg" class="card-img-top" alt="The Thinker">
                     <div class="card-body">
                         <h5 class="card-title">The Thinker</h5>
-                        <p class="card-text">Now is located at the Louvre Museum in Paris, Francent</p>
-                        <p class="text-primary fw-bold">Price:$1 billion</p>
-                        <button class="btn btn-warning" onclick="showProductDetailsPage('The Thinker')">more details</button>
+                        <p class="card-text">Now is located at the Louvre Museum in Paris, France</p>
+                        <p class="text-primary fw-bold">Price: $1 billion</p>
+                        <button class="btn btn-warning" onclick="window.location.href='product-details.html?product=The_Thinker'">More Details</button>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="img/David.jpg" alt="David">
-                    <div class="card-body">
-                        <h5 class="card-title">David</h5>
-                        <p class="card-text">Now is located at the Louvre Museum in Paris, Francent</p>
-                        <p class="text-primary fw-bold">Price:$1 billion</p>
-                        <button class="btn btn-warning" onclick="showProductDetailsPage('David')">more details</button>
-                    </div>
-                </div>
-            </div>
+            <!-- Add more sculpture cards as needed -->
 
-            <div class="col-md-4">
-                <div class="card h-100">
-                    <img src="img/David.jpg" alt="David">
-                    <div class="card-body">
-                        <h5 class="card-title">David</h5>
-                        <p class="card-text">Now is located at the Louvre Museum in Paris, Francent</p>
-                        <p class="text-primary fw-bold">Price:$1 billion</p>
-                        <button class="btn btn-warning" onclick="showProductDetailsPage('David')">more details</button>
-                    </div>
-                </div>
-            </div>
         </div>
-        <button class="btn btn-primary" onclick="window.location.href='index.html'">Back to Exhibits</button>
+        <div class="text-center mt-4">
+            <button class="btn btn-primary" onclick="window.location.href='index.html'">Back to Exhibits</button>
+        </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
     <script src="../js/script.js"></script>
     <script src="../js/productDetails.js"></script>
 </body>
